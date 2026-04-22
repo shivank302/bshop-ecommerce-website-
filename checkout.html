@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Shop | Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Checkout Section -->
+  <section class="checkout">
+    <h1>Checkout</h1>
+    <div class="checkout-container">
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="order-item">
+          <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+          <div>
+            <h4>Women’s Black Vest - Gucci</h4>
+            <p>Qty: 1</p>
+            <p class="price">₹715</p>
+          </div>
+        </div>
+        <hr>
+        <p class="total"><strong>Total:</strong> ₹715</p>
+      </div>
+
+      <!-- Billing Form -->
+      <div class="billing">
+        <h2>Billing Details</h2>
+        <form>
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your full name" required>
+
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+
+          <label>Shipping Address</label>
+          <textarea placeholder="Enter your address" rows="3" required></textarea>
+
+          <label>Payment Method</label>
+          <select required>
+            <option value="">Select Payment Method</option>
+            <option>Credit / Debit Card</option>
+            <option>UPI (Google Pay / PhonePe)</option>
+            <option>Cash on Delivery</option>
+          </select>
+
+          <button type="submit" class="place-order">Place Order</button>
+        </form>
+
+        <div class="back-btn">
+          <a href="product.html">← Go Back to Product</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+</body>
+</html>

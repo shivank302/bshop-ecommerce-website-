@@ -1,0 +1,257 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Shop | Stylish Collection</title>
+
+  <!-- ✅ Correct favicon (no food icon anymore) -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/891/891462.png">
+
+
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin-dashboard.html">Admin Panel</a></li>
+        <li><a href="profile.html">My Account</a></li>
+        <li><a href="my-orders.html">My Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Search and Filter Bar -->
+  <section class="search-filter">
+    <div class="search-box">
+      <input type="text" placeholder="Search for products, brands and more...">
+      <button>Search</button>
+    </div>
+    <div class="filter-box">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="women">Women</option>
+        <option value="men">Men</option>
+        <option value="kids">Kids</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Admire Stylish Dresses & Looks</h1>
+      <p>Discover the latest trends in fashion and find your perfect outfit.</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.pexels.com/photos/3770581/pexels-photo-3770581.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fashion Model">
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="cat-box pink">
+      <h3>Women Collection</h3>
+      <p>New arrivals</p>
+    </div>
+    <div class="cat-box purple">
+      <h3>Bestsellers</h3>
+      <p>Top picks</p>
+    </div>
+    <div class="cat-box blue">
+      <h3>Denim Jackets</h3>
+      <p>Trendy styles</p>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat-card">
+      <h3>Total Orders</h3>
+      <p id="totalOrders">258</p>
+    </div>
+    <div class="stat-card">
+      <h3>Total Sales</h3>
+      <p id="totalSales">₹1,45,720</p>
+    </div>
+    <div class="stat-card">
+      <h3>Total Users</h3>
+      <p id="totalUsers">532</p>
+    </div>
+  </section>
+
+  <!-- ✅ Sales Analytics Section -->
+  <section id="analytics" class="analytics-section">
+    <h2>📊 Sales Analytics Dashboard</h2>
+    <p>Visual representation of monthly performance and product category sales.</p>
+    <div class="charts" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="chart-container" style="width:400px; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <h3>Monthly Sales (₹)</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="chart-container" style="width:400px; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+        <h3>Category Sales (%)</h3>
+        <canvas id="categoryChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="product-blackvest.html">
+          <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+        </a>
+        <h4><a href="product-blackvest.html">Women’s Black Vest - Gucci</a></h4>
+        <p>₹715</p>
+        <button class="buy-now" onclick="window.location.href='order-confirmation.html?name=Women’s%20Black%20Vest%20-%20Gucci&price=₹715&image=https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&w=600'">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <a href="product-reddress.html">
+          <img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+        </a>
+        <h4><a href="product-reddress.html">Red Dress - Valentino</a></h4>
+        <p>₹1610</p>
+        <button class="buy-now" onclick="window.location.href='order-confirmation.html?name=Red%20Dress%20-%20Valentino&price=₹1610&image=https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=600'">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <a href="product-shinydress.html">
+          <img src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+        </a>
+        <h4><a href="product-shinydress.html">Shiny Dress - Givenchy</a></h4>
+        <p>₹1540</p>
+        <button class="buy-now" onclick="window.location.href='order-confirmation.html?name=Shiny%20Dress%20-%20Givenchy&price=₹1540&image=https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&w=600'">Buy Now</button>
+      </div>
+
+      <div class="product-card">
+        <a href="product-tshirt.html">
+          <img src="https://images.pexels.com/photos/3760853/pexels-photo-3760853.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+        </a>
+        <h4><a href="product-tshirt.html">Casual T-shirt - Zara</a></h4>
+        <p>₹890</p>
+        <button class="buy-now" onclick="window.location.href='order-confirmation.html?name=Casual%20T-shirt%20-%20Zara&price=₹890&image=https://images.pexels.com/photos/3760853/pexels-photo-3760853.jpeg?auto=compress&cs=tinysrgb&w=600'">Buy Now</button>
+        <button type="button" class="place-order" onclick="window.location.href='order-confirmation.html'">Place Order</button>
+        <a href="my-orders.html" class="btn-secondary">View My Orders</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Chart.js Analytics Script -->
+  <script>
+    const ctx1 = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+          label: 'Monthly Sales (₹)',
+          data: [12000, 18000, 24000, 20000, 30000, 35000],
+          backgroundColor: 'rgba(108, 99, 255, 0.6)',
+          borderColor: '#6c63ff',
+          borderWidth: 1,
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: true, position: 'top' },
+          title: { display: true, text: 'Monthly Sales Growth (Jan–Jun 2025)' }
+        },
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+
+    const ctx2 = document.getElementById('categoryChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: {
+        labels: ['Women', 'Men', 'Kids', 'Accessories'],
+        datasets: [{
+          label: 'Category Sales',
+          data: [45, 30, 15, 10],
+          backgroundColor: ['#ff80ab', '#9575cd', '#64b5f6', '#81c784'],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Category-wise Sales Share' }
+        }
+      }
+    });
+  </script>
+<script>
+function animateValue(id, start, end, duration) {
+  let obj = document.getElementById(id);
+  let range = end - start;
+  let startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    let progress = Math.min((timestamp - startTime) / duration, 1);
+    obj.textContent = Math.floor(progress * range + start);
+    if (progress < 1) window.requestAnimationFrame(step);
+  }
+
+  window.requestAnimationFrame(step);
+}
+
+window.onload = function() {
+  animateValue("totalOrders", 0, 258, 2000);
+  animateValue("totalSales", 0, 145720, 2500);
+  animateValue("totalUsers", 0, 532, 2000);
+};
+</script>
+ <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2>📞 Contact Us</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Store Address</h3>
+        <p>B-Shop, Fashion Street<br>New Delhi, India</p>
+        <h3>Email</h3>
+        <p>support@bshop.com</p>
+        <h3>Phone</h3>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <label for="name">Your Name</label><br>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Your Email</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+
+
+</body>
+</html>

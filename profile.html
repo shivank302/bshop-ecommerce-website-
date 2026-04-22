@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B-Shop | My Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my-orders.html">My Orders</a></li>
+        <li><a href="profile.html" class="active">My Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <div class="profile-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="User Avatar" class="profile-img">
+
+      <h2>Shivank Ranjan</h2>
+      <p class="user-email">sms2shivankranjan@gmail.com</p>
+
+      <form class="profile-form">
+        <label>Full Name</label>
+        <input type="text" value="Shivank Ranjan" required>
+
+        <label>Email</label>
+        <input type="email" value="sms2shivankranjan@gmail.com" required>
+
+        <label>Phone</label>
+        <input type="tel" value="+91 9876543210" required>
+
+        <label>Address</label>
+        <textarea rows="3" required>Patna, Bihar, India</textarea>
+
+        <button type="button" class="save-btn">Save Changes</button>
+      </form>
+
+      <div class="profile-actions">
+        <a href="my-orders.html" class="btn">My Orders</a>
+        <a href="index.html" class="btn-secondary">Logout</a>
+      </div>
+
+      <div class="back-btn">
+        <a href="index.html">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+
+</body>
+</html>

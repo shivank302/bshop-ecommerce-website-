@@ -1,0 +1,161 @@
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">B-Shop Admin</div>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <ul>
+      <li class="active"><a href="#overview">Dashboard</a></li>
+      <li><a href="#orders">Orders</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#users">Users</a></li>
+      <li><a href="index.html">Back to Website</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="admin-main">
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+      <h1>Dashboard Overview</h1>
+      <div class="stats">
+        <div class="stat-card">
+          <h3>Total Orders</h3>
+          <p id="totalOrders">258</p>
+        </div>
+        <div class="stat-card">
+          <h3>Total Sales</h3>
+          <p id="totalSales">₹1,45,720</p>
+        </div>
+        <div class="stat-card">
+          <h3>Total Users</h3>
+          <p id="totalUsers">532</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Orders Table -->
+    <section id="orders" class="table-section">
+      <h2>Recent Orders</h2>
+      <table id="ordersTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#BSHOP12345</td>
+            <td>Shivank Ranjan</td>
+            <td>Women’s Black Vest</td>
+            <td><span class="status delivered">Delivered</span></td>
+            <td>₹715</td>
+          </tr>
+          <tr>
+            <td>#BSHOP12346</td>
+            <td>Arpit Verma</td>
+            <td>Denim Jacket</td>
+            <td><span class="status shipped">Shipped</span></td>
+            <td>₹1,299</td>
+          </tr>
+          <tr>
+            <td>#BSHOP12347</td>
+            <td>Ankit Sharma</td>
+            <td>White Sneakers</td>
+            <td><span class="status cancelled">Cancelled</span></td>
+            <td>₹2,499</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Products Table -->
+    <section id="products" class="table-section">
+      <h2>Products List</h2>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th data-sort="id">Product ID</th>
+            <th data-sort="name">Name</th>
+            <th data-sort="category">Category</th>
+            <th data-sort="price">Price</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#P001</td>
+            <td>Women’s Black Vest</td>
+            <td>Fashion</td>
+            <td>₹715</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>#P002</td>
+            <td>Men’s Denim Jacket</td>
+            <td>Clothing</td>
+            <td>₹1,299</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>#P003</td>
+            <td>White Sneakers</td>
+            <td>Footwear</td>
+            <td>₹2,499</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Users Table -->
+    <section id="users" class="table-section">
+      <h2>Registered Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Joined</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#U001</td>
+            <td>Shivank Ranjan</td>
+            <td>sms2shivankranjan@gmail.com</td>
+            <td>Oct 2025</td>
+          </tr>
+          <tr>
+            <td>#U002</td>
+            <td>Arpit Verma</td>
+            <td>arpitverma@gmail.com</td>
+            <td>Sep 2025</td>
+          </tr>
+          <tr>
+            <td>#U003</td>
+            <td>Ankit Sharma</td>
+            <td>ankitsharma@gmail.com</td>
+            <td>Aug 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="admin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
+<!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>

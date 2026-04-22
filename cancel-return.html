@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Shop | Cancel or Return Order</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Cancel / Return Section -->
+  <section>
+    <h1>🔁 Cancel or Return Your Order</h1>
+    <p>If you wish to cancel or return a product, please fill out the form below.</p>
+
+    <form action="cancel-return-confirmation.html" method="post">
+      <label for="orderid">Order ID:</label><br>
+      <input type="text" id="orderid" name="orderid" placeholder="e.g. ORD2025" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="yourmail@example.com" required><br><br>
+
+      <label for="reason">Select Action:</label><br>
+      <select id="reason" name="reason" required>
+        <option value="">-- Choose an option --</option>
+        <option value="cancel">Cancel Order</option>
+        <option value="return">Return Product</option>
+      </select><br><br>
+
+      <label for="comments">Reason / Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Please explain your reason..."></textarea><br><br>
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <hr>
+    <h2>Recent Requests</h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Order ID</th>
+        <th>Product</th>
+        <th>Action</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>#ORD2025</td>
+        <td>Women’s Black Vest - Gucci</td>
+        <td>Return Requested</td>
+        <td>Under Review 🔄</td>
+      </tr>
+    </table>
+
+    <p><a href="my-orders.html">View My Orders</a> | <a href="track-order.html">Track Order</a> | <a href="index.html">Home</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+</body>
+</html>

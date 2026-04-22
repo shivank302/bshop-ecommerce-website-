@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Shop | Track Order</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="my-orders.html">My Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Track Order Section -->
+  <section>
+    <h1>📦 Track Your Order</h1>
+    <p>Enter your Order ID or Email address to check the status of your purchase.</p>
+
+    <form>
+      <label for="order-id">Order ID:</label><br>
+      <input type="text" id="order-id" name="order-id" placeholder="e.g. ORD2025" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+      <button type="submit">Track Order</button>
+    </form>
+
+    <hr>
+
+    <h2>Order Status:</h2>
+    <p><strong>Order ID:</strong> #ORD2025</p>
+    <p><strong>Product:</strong> Women’s Black Vest - Gucci</p>
+    <p><strong>Estimated Delivery:</strong> 5th November 2025</p>
+
+    <ul>
+      <li>🛒 Order Placed - 28th Oct</li>
+      <li>📦 Packed - 29th Oct</li>
+      <li>🚚 Shipped - 30th Oct</li>
+      <li>🏠 Out for Delivery - 4th Nov</li>
+    </ul>
+
+    <p>Need help? <a href="contact.html">Contact our support team</a>.</p>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B-Shop | Order Confirmation</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">B-Shop</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Confirmation Section -->
+  <section>
+    <h1>🎉 Order Confirmed!</h1>
+    <p>Thank you for shopping with <strong>B-Shop</strong>! Your order has been successfully placed.</p>
+
+    <h2>Order Summary</h2>
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Order ID</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td id="productName">Loading...</td>
+        <td id="productPrice">Loading...</td>
+        <td id="orderId">#ORD0000</td>
+        <td>Confirmed ✅</td>
+      </tr>
+    </table>
+
+    <p>Your item will be shipped soon. You’ll receive an email with delivery details shortly.</p>
+    <br>
+
+    <a href="shop.html">← Continue Shopping</a> |
+    <a href="my-orders.html">View My Orders</a> |
+    <a href="index.html">Go to Home</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 B-Shop | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+
+  <!-- Tiny Inline Script -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name") || "Women's Black Vest – Gucci";
+    const price = params.get("price") || "₹715";
+    const id = "#ORD" + Math.floor(1000 + Math.random() * 9000);
+
+    document.getElementById("productName").textContent = name;
+    document.getElementById("productPrice").textContent = price;
+    document.getElementById("orderId").textContent = id;
+  </script>
+</body>
+</html>
